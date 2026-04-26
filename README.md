@@ -17,7 +17,6 @@
 [![Portfolio](https://img.shields.io/badge/3D_Portfolio-050a14?style=for-the-badge&logo=threedotjs&logoColor=58a6ff)](https://hemanth-labs.netlify.app/)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthd0916@gmail.com)
 [![Phone](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+916304308402)
-[![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/YOUR_GITHUB_USERNAME)
 
 </div>
 
