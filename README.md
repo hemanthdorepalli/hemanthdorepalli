@@ -1,4 +1,3 @@
-<!-- ANIMATED HEADER -->
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,30:0d2137,60:0a3d6b,100:58a6ff&height=280&section=header&text=Hemanth%20Dorepalli&fontSize=52&fontColor=ffffff&fontAlignY=42&desc=Full%20Stack%20Developer%20%7C%20Security%20Architect%20%7C%20Cloud%20Native&descAlignY=62&descSize=15&descColor=8b949e&animation=fadeIn&stroke=58a6ff&strokeWidth=2" width="100%"/>
 </div>
@@ -10,13 +9,12 @@
 
 <br/>
 
-<!-- BADGES ROW -->
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-3b7a26295/)
-[![Portfolio](https://img.shields.io/badge/3D_Portfolio-050a14?style=for-the-badge&logo=threedotjs&logoColor=58a6ff)](https://hemanth-labs.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-050a14?style=for-the-badge&logo=threedotjs&logoColor=58a6ff)](https://hemanth-labs.netlify.app/)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthd0916@gmail.com)
-[![Phone](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+916304308402)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+916304308402)
 
 </div>
 
@@ -24,51 +22,49 @@
 
 ---
 
-<!-- ABOUT ME with animated code block -->
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"/> About Me
 
 ```python
 #!/usr/bin/env python3
-# hemanth.py — run to learn more
 
 class HemanthDorepalli:
 
     def __init__(self):
         self.name        = "Hemanth Dorepalli"
         self.role        = "Full Stack Developer"
-        self.experience  = "3 years"
+        self.experience  = "3+ years"
         self.location    = "India 🇮🇳"
-        self.company     = "FactOps Pvt Ltd"
-        self.open_to     = ["Full-time roles", "Fintech", "Security platforms", "IoT"]
+        self.company     = "FactOps Pvt Ltd @ Station-S"
+        self.open_to     = ["Full-time roles", "Fintech", "Security platforms", "IoT", "SaaS"]
 
     @property
     def stack(self) -> dict:
         return {
             "backend":    ["Python", "FastAPI", "Django", "Java", "Spring Boot"],
-            "frontend":   ["React", "JavaScript", "WebSocket", "HTML/CSS"],
-            "security":   ["JWT / JTI Rotation", "OAuth2", "OIDC", "RBAC", "Zero-Trust", "SSO"],
-            "cloud":      ["AWS S3", "Docker", "CI/CD", "GitHub Actions", "Linux"],
-            "databases":  ["PostgreSQL", "MySQL", "Redis", "Time-series"],
-            "arch":       ["Microservices", "REST APIs", "Distributed Systems", "Multi-tenant SaaS"],
+            "frontend":   ["React", "Next.js", "JavaScript", "WebSocket"],
+            "security":   ["JWT/JTI Rotation", "OAuth2", "OIDC", "RBAC", "Zero-Trust", "SSO"],
+            "async":      ["Celery", "Redis", "RabbitMQ", "AsyncIO", "Multiprocessing"],
+            "cloud":      ["AWS S3", "Docker", "GitHub Actions", "CI/CD", "Gunicorn", "Daphne"],
+            "databases":  ["PostgreSQL", "MySQL", "Redis"],
+            "arch":       ["Microservices", "Distributed Systems", "Event-Driven", "Multi-tenant SaaS"],
         }
 
-    def current_focus(self) -> list:
+    def what_i_ship(self) -> list:
         return [
-            "🔐 Secure multi-tenant document management (FACT.Safe)",
-            "🔑 Centralized SSO & auth platform (FACT.Login)",
-            "📡 Real-time IoT monitoring with WebSocket pipelines (Weewa)",
-            "☁️  Cloud-native APIs on AWS with Docker & automated CI/CD",
+            "🔐 FACT.Safe  — Multi-tenant encrypted document vault, RBAC, AWS S3, 70% latency reduction",
+            "🔑 FACT.Login — Zero-Trust SSO platform, OAuth2/OIDC, JTI rotation, blocks threats <200ms",
+            "📡 Weewa      — Real-time IoT platform, 10k+ readings/day, 80% faster failure detection",
+            "☁️  Production CI/CD on AWS with Docker and GitHub Actions, 45min → 8min deploy time",
         ]
 
 if __name__ == "__main__":
     me = HemanthDorepalli()
-    print(f"👋 Hi, I'm {me.name} — {me.role}")
-    print(f"📍 {me.location} | 💼 {me.company}")
+    for item in me.what_i_ship():
+        print(item)
 ```
 
 ---
 
-<!-- ANIMATED SKILL SECTION -->
 ## 🛠️ Tech Arsenal
 
 <div align="center">
@@ -87,23 +83,27 @@ if __name__ == "__main__":
 
 ### 🎨 Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 
-### 🔐 Security & Auth
+### 🔐 Security and Auth
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 ![OAuth2](https://img.shields.io/badge/OAuth2-EB5424?style=for-the-badge&logo=auth0&logoColor=white)
 ![OIDC](https://img.shields.io/badge/OIDC-FF4F00?style=for-the-badge&logo=openid&logoColor=white)
-![Zero Trust](https://img.shields.io/badge/Zero--Trust-FF0000?style=for-the-badge&logo=security&logoColor=white)
+![Zero Trust](https://img.shields.io/badge/Zero--Trust-FF0000?style=for-the-badge&logoColor=white)
 ![RBAC](https://img.shields.io/badge/RBAC-7B2FBE?style=for-the-badge&logoColor=white)
 ![SSO](https://img.shields.io/badge/SSO-0052CC?style=for-the-badge&logoColor=white)
 
-### ☁️ Cloud & DevOps
+### ⚙️ Async and Distributed Systems
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+
+### ☁️ Cloud and DevOps
 ![AWS](https://img.shields.io/badge/AWS_S3-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-0D1117?style=for-the-badge&logo=githubactions&logoColor=58a6ff)
 
 ### 🗄️ Databases
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -114,7 +114,6 @@ if __name__ == "__main__":
 
 ---
 
-<!-- SKILL PROFICIENCY BARS using SVG animation -->
 ## 📊 Skill Proficiency
 
 <div align="center">
@@ -122,40 +121,52 @@ if __name__ == "__main__":
 | Skill | Proficiency |
 |-------|------------|
 | Python / FastAPI / Django | ![95%](https://progress-bar.xyz/95/?scale=100&title=Expert&width=200&color=58a6ff&suffix=%) |
-| Security (JWT · OAuth2 · Zero-Trust) | ![90%](https://progress-bar.xyz/90/?scale=100&title=Expert&width=200&color=d4537e&suffix=%) |
+| Security — JWT · OAuth2 · Zero-Trust | ![90%](https://progress-bar.xyz/90/?scale=100&title=Expert&width=200&color=d4537e&suffix=%) |
+| Distributed Systems — Celery · Redis · RabbitMQ | ![85%](https://progress-bar.xyz/85/?scale=100&title=Advanced&width=200&color=8b5cf6&suffix=%) |
 | PostgreSQL / Redis | ![85%](https://progress-bar.xyz/85/?scale=100&title=Advanced&width=200&color=1d9e75&suffix=%) |
-| React / JavaScript | ![80%](https://progress-bar.xyz/80/?scale=100&title=Advanced&width=200&color=61dafb&suffix=%) |
-| AWS / Docker / CI-CD | ![82%](https://progress-bar.xyz/82/?scale=100&title=Advanced&width=200&color=ff9900&suffix=%) |
+| React / Next.js / JavaScript | ![80%](https://progress-bar.xyz/80/?scale=100&title=Advanced&width=200&color=61dafb&suffix=%) |
+| AWS / Docker / CI/CD | ![82%](https://progress-bar.xyz/82/?scale=100&title=Advanced&width=200&color=ff9900&suffix=%) |
 | Java / Spring Boot | ![75%](https://progress-bar.xyz/75/?scale=100&title=Proficient&width=200&color=6db33f&suffix=%) |
-| Microservices Architecture | ![85%](https://progress-bar.xyz/85/?scale=100&title=Advanced&width=200&color=8b5cf6&suffix=%) |
 
 </div>
 
 ---
 
-<!-- PROJECTS with visual cards -->
 ## 🚀 Featured Projects
-
-<div align="center">
-
-| Project | Stack | Highlights |
-|---------|-------|------------|
-| 🔒 **FACT.Safe** — Secure Doc Mgmt | FastAPI · AWS S3 · PostgreSQL · JWT · Redis | Multi-tenant · Encrypted vault · RBAC · Expiring links |
-| 🔑 **FACT.Login** — Auth Platform | FastAPI · OAuth2 · OIDC · Zero-Trust | SSO · Device binding · JTI rotation · Anomaly detection |
-| 📡 **Weewa** — IoT Monitor | FastAPI · WebSocket · React · Docker | Real-time streaming · Map dashboards · Auto CI/CD |
-
-</div>
 
 ### 🔒 FACT.Safe — Secure Document Management Platform
 > Multi-tenant document vault · AWS S3 encryption · Zero-Trust access control
 
 ```
-Architecture:  Multi-tenant  ──►  Isolated Storage  ──►  Encrypted Vault (AWS S3)
-Access Layer:  JWT Auth  ──►  RBAC (Admin/Manager/Associate)  ──►  Fine-grained Permissions
-Features:      Full-text Search  |  Expiring Links  |  Versioning  |  Audit Logging
+                    [Client Request]
+                          │
+                          ▼
+          [JWT Auth + Zero-Trust Middleware]
+                          │
+              ┌───────────┴───────────┐
+              ▼                       ▼
+    [RBAC Engine]            [Expiring Access Tokens]
+    per-user per-category    restricted download/view
+              │
+    ┌─────────┴──────────┐
+    ▼                    ▼
+[PostgreSQL          [AWS S3 — Encrypted]
+ metadata +           8 vault categories
+ full-text search]    server-side + app-level encryption
+              │
+              ▼
+    [Celery Workers via Redis]
+    background document processing
 ```
 
-`FastAPI` `PostgreSQL` `AWS S3` `JWT` `Redis` `Docker` `Zero-Trust`
+**Impact:**
+- ✅ 5 organization types with strict row-level data isolation
+- ✅ 70% API response latency reduction via Celery offloading
+- ✅ 60% reduction in permission management time via 4-step RBAC wizard
+- ✅ Sub-100ms document retrieval with PostgreSQL query optimization
+- ✅ Zero unauthorized access incidents across 8 vault categories
+
+`Django` `PostgreSQL` `AWS S3` `JWT` `Redis` `Celery` `Docker` `Zero-Trust` `RBAC`
 
 ---
 
@@ -163,88 +174,194 @@ Features:      Full-text Search  |  Expiring Links  |  Versioning  |  Audit Logg
 > SSO hub · OAuth2/OIDC · Zero-Trust · JTI token rotation
 
 ```
-Auth Flow:   OAuth2/OIDC  ──►  Device Binding + IP Validation  ──►  JWT (JTI Rotation)
-Security:    Anomaly Detection  |  Session Invalidation  |  Refresh Token Blacklist
-Cross-product SSO across all FactOps services
+              [User Login Attempt]
+                      │
+                      ▼
+          [OAuth2/OIDC Flow]
+                      │
+                      ▼
+     [Zero-Trust Enforcement — 3 Layers]
+     ├── Layer 1: IP Binding      → web clients
+     ├── Layer 2: Device Fingerprint → mobile clients
+     └── Layer 3: Location Anomaly  → blocks in <200ms
+                      │
+                      ▼
+          [JWT + JTI Token Rotation]
+                      │
+         ┌────────────┴────────────┐
+         ▼                         ▼
+    [Redis Blocklist]        [PostgreSQL Blocklist]
+    (fast lookup)            (survives Redis failure)
+                      │
+                      ▼
+          [SSO — valid across all FACT products]
 ```
 
-`FastAPI` `JWT` `OAuth2` `OIDC` `Zero-Trust` `SSO` `Redis`
+**Impact:**
+- ✅ Unified 4 separate auth systems into one SSO platform
+- ✅ Blocks suspicious sessions in under 200ms
+- ✅ Zero downtime — blocklist survives Redis failure
+- ✅ Eliminates XSS token theft via HTTP-only cookies
+
+`Django` `OAuth2` `OIDC` `JWT` `JTI Rotation` `Zero-Trust` `SSO` `Redis` `PostgreSQL`
 
 ---
 
 ### 📡 Weewa — Real-Time IoT Monitoring Platform
-> Live sensor data · WebSocket pipelines · React dashboards
+> Live sensor data · WebSocket pipelines · React dashboards · 20+ locations
 
 ```
-Data Flow:   IoT Sensors  ──►  FastAPI Microservices  ──►  WebSocket Pipeline  ──►  React Dashboard
-Storage:     PostgreSQL (time-series)  |  Real-time map visualization
-DevOps:      Docker + GitHub Actions CI/CD  |  Automated deployments
+[LoRaWAN / Cellular Sensors — 20+ locations]
+                    │
+                    ▼
+      [Third-party IoT Data Providers]
+                    │
+                    ▼
+         [FastAPI — validate + transform]
+                    │
+        ┌───────────┴────────────┐
+        ▼                        ▼
+[PostgreSQL — store]    [RabbitMQ → Celery Workers]
+        │                Pandas + ML Analytics
+        ▼                energy / water / weather
+[WebSocket Pipeline]
+        │
+        ▼
+[React Dashboard — Chart.js + Map visualization]
+
+[Celery Beat — health check every 20 minutes]
+        │
+        ▼
+[WhatsApp + Email alerts on sensor data gap]
 ```
 
-`FastAPI` `React` `WebSocket` `PostgreSQL` `Docker` `GitHub Actions`
+**Impact:**
+- ✅ 10,000+ sensor readings processed daily across 20+ locations
+- ✅ Data refresh lag reduced from 5 minutes to under 2 seconds
+- ✅ Mean time to detect sensor failures cut by 80%
+- ✅ 10+ hours/week saved via automated PDF/Excel reports
+- ✅ Zero task loss with RabbitMQ message persistence
+- ✅ Deployment time cut from 45 minutes to under 8 minutes
+
+`FastAPI` `React` `WebSocket` `PostgreSQL` `Celery` `RabbitMQ` `Docker` `GitHub Actions` `Pandas` `Chart.js`
 
 ---
 
-<!-- GITHUB STATS -->
+## 🏗️ System Design Philosophy
+
+```
+How I architect concurrent backend systems:
+
+  HTTP Requests (I/O-bound)
+         │
+         ▼
+  [Gunicorn — sync workers]
+  GIL released during DB/network wait
+  Threading works fine here
+         │
+         ├──► Fast response ──► Return immediately
+         │
+         └──► Heavy work ──► [Celery — multiprocessing]
+                                    │
+                              Each worker process:
+                              ├── Own Python interpreter
+                              ├── Own GIL (bypassed!)
+                              ├── Own memory space
+                              └── True CPU parallelism
+                                    │
+                              [Redis / RabbitMQ broker]
+                              Producer-Consumer pattern
+                              Decoupled · Scalable · Resilient
+
+  WebSockets (async I/O)
+         │
+         ▼
+  [Daphne — ASGI async event loop]
+  Single thread · Thousands of connections · Never blocking
+
+  Key insight:
+  Threading for I/O-bound (DB queries release GIL)
+  Multiprocessing for CPU-bound (CSV, ML, PDF generation)
+  AsyncIO for connection-bound (WebSockets, live streaming)
+```
+
+---
+
+## 💼 Experience Timeline
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                                                                      │
+│  May 2025 ──── Present                                               │
+│  🏢 FACTOPS PRIVATE LIMITED  (Member Venture, Station-S)             │
+│  💼 Full Stack Developer                                             │
+│                                                                      │
+│  🔒 FACT.Safe — Secure Document Management Platform                  │
+│     70% latency reduction · Zero unauthorized access                 │
+│     60% faster permissions · Sub-100ms retrieval                     │
+│                                                                      │
+│  🔑 FACT.Login — Centralized Zero-Trust SSO                          │
+│     Unified 4 systems · Blocks threats in <200ms                     │
+│     Zero downtime blocklist · XSS-safe HTTP-only cookies             │
+│                                                                      │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  Nov 2024 ──── May 2025                                              │
+│  🏢 Z.APPS PRIVATE LIMITED  (Member Venture, Station-S)              │
+│  💼 Full Stack Developer                                             │
+│                                                                      │
+│  📡 Weewa — Real-Time IoT Monitoring Platform                        │
+│     10k+ readings/day · 20+ locations                                │
+│     80% faster failure detection · 10h/week saved                   │
+│     45min → 8min deployments via Docker + GitHub Actions             │
+│                                                                      │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│  Oct 2022 ──── Jul 2024                                              │
+│  🏢 SocialTek Solutions                                              │
+│  💼 Technical Trainer                                                │
+│                                                                      │
+│     200+ students · 12 batches · 85% placement rate                  │
+│     Spring Boot · React · MySQL · AWS · CI/CD                        │
+│     40% faster onboarding via structured lab exercises               │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1d9e75&text_color=8b949e&ring_color=58a6ff"/>
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&langs_count=8"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=hemanthdorepalli&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1d9e75&text_color=8b949e&ring_color=58a6ff"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hemanthdorepalli&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&langs_count=8"/>
 </div>
 
 <div align="center">
-  <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1d9e75&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e"/>
+  <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=hemanthdorepalli&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=1d9e75&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e"/>
 </div>
-
-<!-- ANIMATED CONTRIBUTION SNAKE -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg"/>
-  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg"/>
-</picture>
-
-</div>
-
----
-
-<!-- EXPERIENCE TIMELINE -->
-## 💼 Experience
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│  Nov 2024 ──── Present                                              │
-│  🏢 FactOps Private Limited                                         │
-│  💼 Full Stack Developer                                            │
-│     ├── FACT.Safe  — Secure Document Management Platform            │
-│     ├── FACT.Login — Centralized Auth & SSO Platform                │
-│     └── Weewa      — Real-time IoT Monitoring Platform              │
-├─────────────────────────────────────────────────────────────────────┤
-│  Oct 2022 ──── Jul 2024                                             │
-│  🏢 SocialTek Solutions                                             │
-│  💼 Technical Trainer                                               │
-│     └── Spring Boot · React · MySQL · AWS · CI/CD                  │
-└─────────────────────────────────────────────────────────────────────┘
-```
 
 ---
 
 ## 🎓 Education
 
 ```
-🎓  B.Tech — Mechanical Engineering
-    JNTU Kakinada  ·  2018 – 2022
+🎓  Bachelor of Technology — Mechanical Engineering
+    JNTU Kakinada  ·  2018 – 2022  ·  CGPA: 8.38
+    Coursework: Data Structures · OOP · Algorithms
 ```
 
 ---
 
-<!-- ANIMATED FOOTER -->
+## 💬 Let's Connect
+
 <div align="center">
 
-### 💬 Let's connect & build something secure together
+**Open to full-time roles in backend engineering, security platforms, IoT systems, and SaaS products.**
 
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hemanth-3b7a26295/)
-[![Portfolio](https://img.shields.io/badge/View_3D_Portfolio-050a14?style=for-the-badge&logo=threedotjs&logoColor=58a6ff)](https://hemanth-labs.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/View_Portfolio-050a14?style=for-the-badge&logo=threedotjs&logoColor=58a6ff)](https://hemanth-labs.netlify.app/)
+[![Email](https://img.shields.io/badge/hemanthd0916@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hemanthd0916@gmail.com)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:1d9e75,100:0d1117&height=120&section=footer&animation=fadeIn" width="100%"/>
 
