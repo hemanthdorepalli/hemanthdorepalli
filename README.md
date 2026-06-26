@@ -40,11 +40,11 @@ class HemanthDorepalli:
     def stack(self) -> dict:
         return {
             "backend_py":   ["Python", "Django", "FastAPI", "Celery"],
-            "backend_node": ["Node.js", "Express", "TypeScript", "Worker Threads", "Cluster"],
+            "backend_node": ["Node.js", "Express", "TypeScript", "BullMQ", "Cluster"],
             "frontend":     ["React", "Next.js", "Vite", "WebSocket"],
             "security":     ["JWT/JTI Rotation", "OAuth2", "OIDC", "RBAC", "Zero-Trust", "SSO"],
             "data":         ["PostgreSQL", "Supabase", "Prisma", "Redis", "MySQL"],
-            "async":        ["Celery", "Redis", "RabbitMQ", "AsyncIO"],
+            "async":        ["Celery", "Redis", "RabbitMQ", "BullMQ", "AsyncIO"],
             "cloud":        ["AWS S3", "Docker", "GitHub Actions", "Render", "Vercel"],
             "ai":           ["Groq LLM", "RAG", "Streaming", "n8n", "MCP"],
         }
@@ -55,7 +55,7 @@ class HemanthDorepalli:
             "🔑 FACT.Login     — Zero-Trust SSO platform, OAuth2/OIDC, JTI rotation, blocks threats <200ms",
             "📡 Weewa          — Real-time IoT platform, 100+ daily readings across 20+ sites, 80% faster failure detection",
             "🧠 BRAHMO Agent   — Healthcare LLM context-assembly system, Groq streaming, hard 4k-token budget",
-            "📋 Software Leads — SaaS CRM: full client project lifecycle with automated PDF proposals",
+            "📋 Software Leads — SaaS CRM: Meta lead capture, BullMQ jobs, automated PDF proposals",
         ]
 
 if __name__ == "__main__":
@@ -108,7 +108,7 @@ if __name__ == "__main__":
 ### ⚙️ Async & Distributed
 ![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![Worker Threads](https://img.shields.io/badge/Worker_Threads-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![BullMQ](https://img.shields.io/badge/BullMQ-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 ### 🤖 AI & Automation
 ![Groq](https://img.shields.io/badge/Groq_LLM-F55036?style=for-the-badge&logoColor=white)
@@ -134,7 +134,7 @@ if __name__ == "__main__":
 |------|--------------|
 | **Daily drivers — production war stories** | Python · Django · Celery · JWT/OAuth2/OIDC · Zero-Trust auth · Git |
 | **Solid production use** | FastAPI · React · PostgreSQL · Redis · RabbitMQ · REST design · WebSockets |
-| **Shipping with, building depth** | Node.js · Express · TypeScript · Next.js · Prisma · Supabase · Groq LLM/RAG |
+| **Shipping with, building depth** | Node.js · Express · TypeScript · Next.js · Prisma · Supabase · BullMQ · Groq LLM/RAG |
 | **Working knowledge** | AWS (S3, deployments) · Docker · GitHub Actions · Java/Spring Boot · Pandas |
 
 > No fake percentage bars. Ask me about any row in an interview — every tier is defensible.
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 ```
 
 **Impact:**
-- ✅ Structured RAG-style context assembly under a hard token budget
+- ✅ Structured context assembly under a hard token budget
 - ✅ Safety-critical rules guaranteed present at every budget level
 - ✅ Streaming responses with per-patient dynamic filtering
 
@@ -249,9 +249,12 @@ if __name__ == "__main__":
 ---
 
 ### 📋 Software Leads — Client & Project Management CRM
-> Full client project lifecycle · Estimations · Payments · Automated PDF proposals
+> Full client project lifecycle · Meta Lead Ads automation · BullMQ background jobs · Cluster scaling
 
 ```
+        [Meta Lead Ads — FB / IG Webhooks]
+                       │
+                       ▼
  [Lead Intake] → [Requirements] → [Confirmation]
                                        │
                   ┌────────────────────┼────────────────────┐
@@ -260,16 +263,21 @@ if __name__ == "__main__":
          Estimation]             Assignment]            Tracking]
                   └────────────────────┼────────────────────┘
                                        ▼
-                  [Automated PDF Proposal — requirements,
-                   estimates, timeline, payment terms]
+                  [Redis + BullMQ Background Jobs]
+                  PDF proposals · email · bulk imports
+                  retry + queue management
+                                       │
+                                       ▼
+                  [Node.js Cluster — multi-core scaling]
 ```
 
 **Impact:**
-- ✅ One system covering intake → estimation → assignment → monitoring → payment
-- ✅ Automated client-ready PDF proposals generated on project confirmation
-- ✅ Role-based access for admins, developers, and clients
+- ✅ One system covering Meta lead capture → estimation → assignment → tracking → payments
+- ✅ Meta (Facebook & Instagram) Lead Ads API + Webhooks automate lead capture and onboarding
+- ✅ Redis + BullMQ background jobs — PDF proposals, email notifications, bulk imports with retry/queue management
+- ✅ Node.js Cluster Module for multi-core scaling · JWT auth · RBAC · deployed on Render
 
-`Node.js` `Express` `TypeScript` `Next.js` `Prisma` `Supabase PostgreSQL` `JWT` `Render`
+`Node.js` `Express` `TypeScript` `Next.js` `Prisma` `Supabase` `Redis` `BullMQ` `Cluster` `JWT` `Meta Lead Ads` `RBAC`
 
 ---
 
@@ -340,12 +348,12 @@ How I architect concurrent backend systems:
   Single thread · Thousands of connections · Never blocking
 
   Node.js side — same principles, different tools:
-  Event loop for I/O · Worker Threads for CPU-bound work
-  (CSV parsing, PDF generation) · Cluster for multi-core scaling
+  Event loop for I/O · BullMQ for background jobs
+  (PDF generation, email, bulk imports) · Cluster for multi-core scaling
 
   Key insight:
   Threading/event loop for I/O-bound
-  Multiprocessing/Worker Threads for CPU-bound
+  Multiprocessing/job queues for CPU-bound & deferred work
   AsyncIO for connection-bound (WebSockets, streaming)
 ```
 
@@ -366,7 +374,7 @@ How I architect concurrent backend systems:
 │                                                                      │
 │  🔑 FACT.Login — Centralized Zero-Trust SSO                          │
 │     Unified auth for 4 products · Blocks threats in <200ms           │
-│     Dual-layer blocklist · XSS-safe HTTP-only cookies                │
+│     Dual-layer blocklist · XSS-safe HTTP-only cookies               │
 │                                                                      │
 ├──────────────────────────────────────────────────────────────────────┤
 │                                                                      │
@@ -385,9 +393,10 @@ How I architect concurrent backend systems:
 │  🏢 SocialTek Solutions                                              │
 │  💼 Technical Trainer                                                │
 │                                                                      │
-│     50+ students · 6 batches · 85% placement rate                    │
-│     Spring Boot · React · MySQL · AWS                                │
-│     15+ demo applications built as curriculum references             │
+│     Taught full-stack development to 50+ students · 6 batches        │
+│     85% placement rate                                               │
+│     Built 15+ full-stack demo applications as curriculum references  │
+│     Stack: React · Spring Boot · MySQL · AWS                         │
 │                                                                      │
 └──────────────────────────────────────────────────────────────────────┘
 ```
